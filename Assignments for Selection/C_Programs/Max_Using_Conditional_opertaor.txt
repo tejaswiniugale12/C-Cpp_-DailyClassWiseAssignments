@@ -1,0 +1,22 @@
+/*
+Assignments for Selection
+
+3)	Write a program to find maximum of 3 numbers using
+b)	Conditional operator
+
+*/
+
+#include <stdio.h>
+
+int main()
+{
+    int num1=0,num2=0,num3=0;
+	int Max=0;
+	printf("Enter Three Numbers: ");
+	scanf("%d%d%d",&num1,&num2,&num3);
+	
+	(num1 > num2) && (num1 > num3)?printf("MAX:%d",num1):
+	(num2 > num3)?printf("MAX:%d",num2):printf("MAX:%d",num3);
+	
+    return 0;
+}

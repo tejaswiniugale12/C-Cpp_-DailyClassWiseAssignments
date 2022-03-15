@@ -1,0 +1,21 @@
+/*
+  Assignments for Selection
+  
+  1)	Write a program to find Leap year by sing 
+  b)	Conditional operator
+
+ */
+
+#include <stdio.h>
+
+int main()
+{
+    int year;
+	printf("Enter the Year: ");
+	scanf("%d",&year);
+ 
+    (year%4==0 && year%100!=0) ? printf("Leap Year") :
+        (year%400 ==0 ) ? printf("Leap Year") : printf("Normal year");
+
+    return 0;
+}

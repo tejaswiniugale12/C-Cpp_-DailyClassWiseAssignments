@@ -1,0 +1,37 @@
+/*
+Assignments for Selection
+
+3)	Write a program to find maximum of 3 numbers using
+a)Using IF -ELSE
+
+*/
+
+#include <stdio.h>
+
+int main()
+{
+    int num1=0,num2=0,num3=0;
+	int Max=0;
+	printf("Enter Three Numbers: ");
+	scanf("%d%d%d",&num1,&num2,&num3);
+	
+	if((num1 > num2) && (num1 > num3))
+	{
+		Max = num1;
+	}
+	else if(num2 > num3)
+	{
+		Max = num2;
+	}
+	else
+	{
+		Max = num3;
+	}
+	
+	printf("Maximum of 3 Numbers is: %d",Max);
+	
+ 
+    
+
+    return 0;
+}
